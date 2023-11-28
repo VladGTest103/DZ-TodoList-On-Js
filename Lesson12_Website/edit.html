@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="message__box">
+        
+    </div>
+    <section class="header">
+        <div class="container">
+            <div class="header__title">
+                задача.орг
+            </div>
+            <div class="header__pages">
+                <a href="./index.html">вернуться</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__edit">
+        <div class="container">
+            <form id="editTask">
+                <label for="oldCaption">Введите старое название задачи</label>
+                <input type="text" name="oldCaption" id="oldCaption">
+                <label for="oldStatus">Подтвердите статус старой задачи</label>
+                <select name="oldStatus" id="oldStatus">
+                    <option value="doneTaskOld">Выполнено</option>
+                    <option value="onWayTaskOld">Ожидаем</option>
+                </select>
+    
+                <hr>
+
+                <label for="updateCaption">Введите новое название задачи</label>
+                <input type="text" name="updateCaption" id="updateCaption">
+                <label for="updateStatus">Подтвердите статус новой задачи</label>
+                <select name="updateStatus" id="updateStatus">
+                    <option value="doneTaskUpdate">Выполнено</option>
+                    <option value="onWayTaskUpdate">Ожидаем</option>
+                </select>
+    
+                <button type="submit" id="submitUpdate">Изменить</button>
+            </form>
+        </div>
+       
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer__copyright">
+                задача.орг©2023
+            </div>
+        </div>
+    </section>
+
+    <script src="edit.js"></script>
+</body>
+
+</html>

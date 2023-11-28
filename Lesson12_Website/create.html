@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="message__box">
+        
+    </div>
+    <section class="header">
+        <div class="container">
+            <div class="header__title">
+                задача.орг
+            </div>
+            <div class="header__pages">
+                <a href="index.html">вернуться</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="main__create">
+        <div class="container">
+            <form id="createTask">
+                <label for="createCaption">Введите название задачи</label>
+                <input type="text" name="createCaption" id="createCaption" required>
+                <label for="createStatus">Подтвердите статус задачи</label>
+                <select name="createStatus" id="createStatus" required>
+                    <option value="doneTask">Выполнено</option>
+                    <option value="onWayTask">Ожидаем</option>
+                </select>
+
+                <button type="submit" id="submitCreate">Создать</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer__copyright">
+                задача.орг©2023
+            </div>
+        </div>
+    </section>
+
+
+    <script src="create.js"></script>
+
+</body>
+</html>
