@@ -1,7 +1,9 @@
 
 const URL = "https://jsonplaceholder.typicode.com/todos";
 
-async function getTasks() {
+
+document.addEventListener('DOMContentLoaded' , async function(){
+  
   const response = await fetch(URL);
   const tasks = await response.json();
 
@@ -16,10 +18,8 @@ async function getTasks() {
         `;
     document.querySelector(".main__tasks").appendChild(taskElement);
   }
-}
+})
 
-
-document.addEventListener('DOMContentLoaded', getTasks());
 
 function deleteTask(id) {
   fetch(`${URL}/${id}`, {
@@ -29,9 +29,6 @@ function deleteTask(id) {
   const taskElement = document.querySelector(`.active-${id}`);
   taskElement.remove();
 }
-
-
-
 
 const goTopBtn = document.querySelector(".go-top");
 
